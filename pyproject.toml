@@ -1,0 +1,19 @@
+[project]
+name = "shodan-cli"
+version = "0.1.0"
+description = "A quick way to interact with the Shodan API"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "setuptools>=75.8.0",
+    "shodan>=1.31.0",
+]
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "isort>=6.0.0",
+]
+
+[tools.isort]
+profile = "black"
